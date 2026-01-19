@@ -24,4 +24,4 @@ Backend: https://your-render-url
 Frontend: https://your-frontend-url
 
 ## Resume
-https://your-resume-link
+[https://your-resume-link](https://drive.google.com/file/d/1IduFh_ZQsFrwzi81GV0Wt2W-p40NH1EU/view?usp=drivesdk)
