@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>My Profile</h2>
+<pre id="profile"></pre>
+
+<h3>Search Projects</h3>
+<input id="q">
+<button onclick="search()">Search</button>
+<pre id="results"></pre>
+
+<script>
+const API = "http://localhost:8000";
+
+fetch(API + "/profile")
+  .then(r => r.json())
+  .then(d => profile.innerText = JSON.stringify(d, null, 2));
+
+function search() {
+  fetch(API + "/search?q=" + q.value)
+    .then(r => r.json())
+    .then(d => results.innerText = JSON.stringify(d, null, 2));
+}
+</script>
+</body>
+</html>
